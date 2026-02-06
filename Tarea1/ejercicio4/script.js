@@ -1,5 +1,3 @@
-let num = parseInt(prompt("Escribe un numero: "));
-
 function numParImpar(num){
     if(isNaN(num)){
         console.log("No es un numero");
@@ -12,4 +10,6 @@ function numParImpar(num){
     }
 }
 
-numParImpar(num);
+console.log(parImpar(4));
+console.log(parImpar(7));
+console.log(parImpar("hola"));
