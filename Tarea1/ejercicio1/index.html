@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    
+<script>
+function ordenarArray(numeros) {
+    let i = 0;
+    let hayIntercambio = true;
+
+    while (hayIntercambio) {
+        hayIntercambio = false;
+        i = 0;
+
+        while (i < numeros.length - 1) {
+            if (numeros[i] < numeros[i + 1]) {
+                // intercambiar
+                let temp = numeros[i];
+                numeros[i] = numeros[i + 1];
+                numeros[i + 1] = temp;
+                hayIntercambio = true;
+            }
+            i++;
+        }
+    }
+
+    return numeros;
+}
+let numeros = [5, 3, 8, 1, 2];
+console.log(ordenarArray(numeros));
+// En el ejercicio el orden del array está de menor a mayor,
+// pero el ejercicio pone de mayor a menor.
+</script>
+
+</body>
+</html>
